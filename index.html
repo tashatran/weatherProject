@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d161b99c76.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="search-form">
+        <div class="inputIcon">
+          <input
+            type="text"
+            placeholder="Type a city... "
+            id="citySearch"
+            autocomplete="off"
+            autofocus="on"
+          />
+          <i class="fas fa-search"></i>
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <div class="card current">
+            <h1 id="cityName"></h1>
+            <div class="card-body currentBody">
+              <h3 id="timeDate"></h3>
+              <h2>
+                <span id="weatherEmoji">☁️</span>
+                <span id="temperature"> </span>
+                <span id="farenheit-link">°F</span>
+              </h2>
+              <h3 id="current-weather-description"></h3>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <button id="currentLocation">Current Location's Weather📍</button>
+        </div>
+      </div>
+      <div class="row fiveday">
+        <div class="col">
+          <div class="card week">
+            <div class="card-body">
+              <h2>Mon</h2>
+              <p>🌧 <br />78</p>
+              <p class="low">68</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card week">
+            <div class="card-body">
+              <h2>Tue</h2>
+              <p>
+                ☀️
+                <br />
+                87
+              </p>
+              <p class="low">72</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card week">
+            <div class="card-body">
+              <h2>Wed</h2>
+              <p>
+                ☀️
+                <br />
+                80
+              </p>
+              <p class="low">75</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card week">
+            <div class="card-body">
+              <h2>Thur</h2>
+              <p>
+                ⛅️
+                <br />
+                78
+              </p>
+              <p class="low">68</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card week">
+            <div class="card-body">
+              <h2>Fri</h2>
+              <p>
+                ☀️
+                <br />
+                88
+              </p>
+              <p class="low">75</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

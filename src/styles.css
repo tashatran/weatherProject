@@ -1,0 +1,131 @@
+h1 {
+  text-align: center;
+  color: #176ec5;
+  font-weight: bold;
+  font-family: "Noto Sans TC", sans-serif;
+}
+i {
+  position: relative;
+  left: 30%;
+  color: #176ec5;
+}
+input {
+  border: none;
+}
+.container {
+  padding: 80px;
+
+  border-color: #176ec5;
+
+  border-radius: 13px;
+  border-style: solid;
+}
+.card.current h2 {
+  color: #fbb241;
+  font-size: 80px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.card.current h3 {
+  font-family: "Noto Sans TC", sans-serif;
+  text-align: center;
+}
+
+#citySearch {
+  border-radius: 30px;
+  padding: 20px;
+  width: 350px;
+  position: relative;
+  left: 35%;
+  margin-top: 50px;
+  border-color: #176ec5;
+  border-style: solid;
+  transition: all 200ms ease-in-out;
+  outline: none;
+}
+::placeholder {
+  color: #176ec5;
+  font-size: 20px;
+  text-align: center;
+}
+
+.inputIcon:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.card.current {
+  margin-top: 40px;
+  padding: 40px;
+  border: none;
+  width: 45rem;
+  margin-left: 40px;
+}
+
+.currentBody {
+  display: block;
+  margin: 0 auto;
+}
+
+.currentBody h2 {
+  margin-left: 30px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.card.week {
+  border-color: #176ec5;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 13px;
+  box-shadow: 4px 5px 5px 0px #d2d1d3;
+  padding: 10px;
+  height: 230px;
+  width: 12rem;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card.week h2 {
+  font-size: 20px;
+
+  text-align: center;
+}
+.card.week p {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.card.week:hover {
+  transform: scale(1.2);
+}
+
+.low {
+  opacity: 0.5;
+}
+
+#farenheit-link {
+  position: relative;
+  top: -44px;
+  left: -15px;
+  font-size: 18px;
+  color: black;
+}
+#currentLocation {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  border-radius: 30px;
+  height: 50px;
+  background-color: #176ec5;
+  color: white;
+  border: none;
+  font-size: 18px;
+}
+#currentLocation:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
