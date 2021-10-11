@@ -129,3 +129,7 @@ input {
   cursor: pointer;
   opacity: 0.5;
 }
+
+#srcLink {
+  margin-left: 300px;
+}
